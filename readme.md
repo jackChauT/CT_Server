@@ -15,6 +15,11 @@ ___
 `npm install`
 5. Start Program
 `npm run dev`
+---
+## Function
+- Login & Register & Logout
+- Token & Refresh Token
+- CRUD clinic recorda
 
 ## Reminder
 For Testing Reason, I updated .env file.
