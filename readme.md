@@ -2,7 +2,7 @@
 The program is using Mongodb as a database and node expressjs as a server
 ## Installation
 ### Clone 
-- Clone this repo to your local machine using `https://https://github.com/jackChauT/CT_Server`
+- Clone this repo to your local machine using `https://github.com/jackChauT/CT_Server`
 ### Setup
 1. Download and Install Nodejs
 `https://nodejs.org/en/download/`
@@ -16,7 +16,7 @@ The program is using Mongodb as a database and node expressjs as a server
 `npm run dev`
 ---
 ## Function
-- Login & Register & Logout
+- Login & Register
 - Token & Refresh Token
 - CRUD clinic recorda
 
