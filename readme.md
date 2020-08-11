@@ -7,9 +7,15 @@ The program is using Mongodb as a database and node expressjs as a server
 1. Download and Install Nodejs
 `https://nodejs.org/en/download/`
 2. Install Mongodb
+- Ubuntu
 `https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/`
+- Windows
+`https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/`
 3. Start Mongodb
+- Ubuntu
 `sudo systemctl start mongod`
+- Windows
+`"C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe"`
 4. Install package
 `npm install`
 5. Start Program
