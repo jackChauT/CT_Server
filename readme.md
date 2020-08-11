@@ -1,6 +1,5 @@
 ## Into and reminder
 The program is using Mongodb as a database and node expressjs as a server
-___
 ## Installation
 ### Clone 
 - Clone this repo to your local machine using `https://https://github.com/jackChauT/CT_Server`
