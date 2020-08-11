@@ -24,7 +24,7 @@ The program is using Mongodb as a database and node expressjs as a server
 ## Function
 - Login & Register
 - Token & Refresh Token
-- CRUD clinic recorda
+- Create and Get clinic recorda
 
 ## Reminder
 For Testing Reason, I updated .env file.
