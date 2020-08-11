@@ -1,5 +1,6 @@
 ## Into and reminder
-The program is using Mongodb as a database and node expressjs as a server
+- The program is using Mongodb as a database and node expressjs as a server
+- For Testing Reason, I updated .env file.
 ## Installation
 ### Clone 
 - Clone this repo to your local machine using `https://github.com/jackChauT/CT_Server`
@@ -26,5 +27,3 @@ The program is using Mongodb as a database and node expressjs as a server
 - Token & Refresh Token
 - Create and Get clinic recorda
 
-## Reminder
-For Testing Reason, I updated .env file.
