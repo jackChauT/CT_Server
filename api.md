@@ -135,9 +135,6 @@ POST /consultation/create HTTP/1.1
 Accept: application/json
 Content-Type: application/json
 Content-Length: xy
-Headers: {
-  "Authorization": "Bearer `Your access token`"
-}
 {
     "clinic": "ABC",
     "doctor": "Chan Tai Man",
