@@ -18,6 +18,7 @@
 `sudo systemctl start mongod`
 - Windows
 `"C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe"`
+- Please ensure you start the database before running server
 - Server will auto generate the tables
 4. Install package
 `npm install`
