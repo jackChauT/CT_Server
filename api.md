@@ -3,6 +3,7 @@ This is an API document.
 
 ## User
 ### Register
+Create a new user
 **Request:**
 ```json
 POST /user/register HTTP/1.1
@@ -47,6 +48,7 @@ Content-Length: xy
 }
 ``` 
 ### Login
+User Login
 **Request:**
 ```json
 POST /user/login HTTP/1.1
@@ -85,6 +87,42 @@ Content-Length: xy
 {
     "code": 120,
     "message": "User Not Found",
+}
+``` 
+### Refresh token
+Get a new token for User.
+
+```json
+POST /user/refresh-token HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+Content-Length: xy
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMzE5M2ViNGZmMTliMGNjNDE2NmZlOSIsImlhdCI6MTU5NzIwMTA3NX0.DL0yn0DFp9dkixSwWVr3VLw0HcGCMNooDSF_PS0JM68"
+}
+```
+**Successful Response:**
+```json
+HTTP/1.1 200 OK
+Server: My RESTful API
+Content-Type: application/json
+Content-Length: xy
+
+{
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMzE5M2ViNGZmMTliMGNjNDE2NmZlOSIsImlhdCI6MTU5NzIwMTA3NSwiZXhwIjoxNTk3MjAxMDg1fQ.3td9bsk7fon-SuEpYfwjOvz7Pf_AohmFa82Deqhbc33",
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMzE5M2ViNGZmMTliMGNjNDE2NmZlOSIsImlhdCI6MTU5NzIwMTA3NX0.DL0yn0DFp9dkixSwWVr3VLw0HcGCMNooDSF_PS0JM69"
+}
+```
+**Failed Response:**
+```json
+HTTP/1.1 404 Not Found
+Server: My RESTful API
+Content-Type: application/json
+Content-Length: xy
+
+{
+    "message": "Token not found",
 }
 ``` 
 ---
@@ -134,13 +172,12 @@ Content-Length: xy
 ```
 **Failed Response:**
 ```json
-HTTP/1.1 
+HTTP/1.1 400
 Server: My RESTful API
 Content-Type: application/json
 Content-Length: xy
 
 {
-    "code": 400,
     "message": "clinic is not correct or Null",
 }
 ``` 
@@ -199,7 +236,6 @@ Content-Type: application/json
 Content-Length: xy
 
 {
-    "code": 401,
     "message": "invalid signature",
 }
 ``` 
@@ -248,7 +284,6 @@ Content-Type: application/json
 Content-Length: xy
 
 {
-    "code": 401,
     "message": "invalid signature",
 }
 ``` 
