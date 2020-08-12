@@ -71,7 +71,6 @@ async function register(req, res, next) {
     user = user.toJSON();
     user.accessToken = accessToken;
     user.refreshToken = newRefreshToken;
-
     return res.json(user);
   } catch (err) {
     next(err);
@@ -109,7 +108,6 @@ async function refreshToken(req, res, next) {
       },
     });
     isNotFound(foundAuth, 'Token');
-    // throw createError.Forbidden();
     const accessToken = await generateToken(foundAuth.user);
     const newRefreshToken = await generateRefreshToken(foundAuth.user);
 

@@ -4,13 +4,14 @@ const createError = require('http-errors');
 
 async function generateToken(userId) {
   return new Promise((resolve, reject) => {
-    jwt.sign({ id: userId }, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '30m' }, (err, token) => {
-      if (err) {
-        reject(createError.ExpectationFailed());
-        return;
-      }
-      resolve(token);
-    });
+    jwt.sign({ id: userId }, process.env.ACCESS_TOKEN_SECRET, 
+      { expiresIn: process.env.TOKEN_EXPIRE }, (err, token) => {
+        if (err) {
+          reject(createError.ExpectationFailed());
+          return;
+        }
+        resolve(token);
+      });
   });
 }
 

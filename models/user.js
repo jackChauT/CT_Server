@@ -23,10 +23,7 @@ schema.methods.toJSON = function () {
     id: this._id,
     email: this.email,
     clinic: this.clinic,
-    phone: this.phone,
     address: this.address,
-    role: this.role,
-    offset: this.offset,
   };
 };
 
