@@ -2,6 +2,7 @@
 - The program is using Mongodb as a database and node expressjs as a server
 - For Testing Reason, I updated .env file.
 - API Document: [API](/api.md)
+- Server & Apps not tested on Mac system.
 ## Installation
 ### Clone 
 - Clone this repo to your local machine using `https://github.com/jackChauT/CT_Server`
